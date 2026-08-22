@@ -71,21 +71,43 @@
 <body>
 <main>
   <h1>Privacy Policy — Yallah Habibti</h1>
-  <p class="updated">Last updated: August 20, 2026</p>
+  <p class="updated">Last updated: August 22, 2026</p>
 
   <p>Yallah Habibti ("the app," "we," "us") is an app for learning Modern Standard Arabic with everyday Gulf dialect content. This policy explains what data the app touches, how it's used, and the choices available to you.</p>
 
   <h2>The short version</h2>
-  <p>Yallah Habibti doesn't have user accounts, doesn't run its own servers, and doesn't collect or store your personal data anywhere except your own device. The only outside service the app talks to is Google AdMob, which shows ads and — where required — asks your consent first.</p>
+  <p>Yallah Habibti doesn't require an account, doesn't run its own servers, and — unless you turn on the optional cloud sync described below — never sends your personal data anywhere except your own device. If you choose to sign in and turn on progress sync, a copy of your course progress is stored in the cloud (via Google Firebase) under your account, so it can follow you to another device; you can delete that account and its cloud data at any time from Settings. The other outside services the app talks to are Google AdMob, which shows ads and — where required — asks your consent first, and RevenueCat, which manages Premium subscription purchases through Apple's and Google's own billing systems.</p>
 
   <h2>Information stored on your device</h2>
   <p>The app saves your course progress, streak, achievements, hearts count, and settings (like display preferences) using your device's local storage. This information:</p>
   <ul>
-    <li>Never leaves your device or gets sent to us</li>
+    <li>Never leaves your device or gets sent to us, unless you turn on optional cloud sync (see below)</li>
     <li>Is only accessible to the app itself</li>
     <li>Is permanently deleted if you uninstall the app or clear its data from your device settings</li>
   </ul>
-  <p>Because there's no account system, this progress can't be recovered or transferred if you switch devices or reinstall the app.</p>
+  <p>Unless you turn on sync, this progress can't be recovered or transferred if you switch devices or reinstall the app.</p>
+
+  <h2>Optional account sync</h2>
+  <p>Yallah Habibti offers optional cloud sync so your course progress can follow you across devices. Signing in is never required to use the app — everything above stays true unless you take this extra step, from <strong>Settings → Sync my progress across devices</strong>.</p>
+  <p>If you choose to turn it on:</p>
+  <ul>
+    <li>You sign in with your Google or Apple account, handled entirely by Google or Apple — we never see or store your password.</li>
+    <li>We use <strong>Google Firebase</strong> (Authentication and Cloud Firestore) to create an account identifier and store a copy of your course progress — the same categories of information described above (completed lessons, streak, achievements, scores, and similar) — tied to that identifier. Your name and email may also be stored if your Google or Apple account provides them, so the app can show "Signed in as ___".</li>
+    <li>Your progress is only ever readable by your own signed-in account, enforced by Firebase's server-side access rules, not just app behavior — no other user can see it.</li>
+    <li>This data is never used for advertising and is never shared with AdMob or any advertiser.</li>
+    <li>See Google's <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacy &amp; Terms</a> for how Firebase, as part of Google Cloud, handles data on our behalf.</li>
+  </ul>
+  <p id="delete-account">You can delete your account and permanently delete everything stored under it in the cloud at any time, from <strong>Settings → Delete account and cloud data</strong>. This does not touch the progress already saved on your device, which continues to follow the same rules as any other locally-stored data described above.</p>
+
+  <h2>Quiz leaderboards</h2>
+  <p>Yallah Habibti offers optional daily, weekly, and monthly leaderboards for Timed Survival quizzes, shown per topic. This is a second, separate opt-in on top of account sync — turning on sync does not put you on a leaderboard, and turning on a leaderboard does not require sync.</p>
+  <ul>
+    <li>Leaderboards require being signed in (see "Optional account sync" above) and are off by default even once signed in — you turn them on yourself, from <strong>Settings → Show my scores on leaderboards</strong>.</li>
+    <li>If you turn this on, your chosen display name (the one set via "Edit name" — never your Google or Apple account name) and your best Timed Survival score per topic become visible to <strong>anyone</strong> who opens that topic's leaderboard, including people who don't use the app themselves. Nothing else about your account or progress is shown — no email, no other scores, no sync data.</li>
+    <li>We apply a small, automatic check against obviously offensive display names before letting you turn leaderboards on — a good-faith filter, not a guarantee. Any leaderboard entry can be reported (a flag icon next to each name) — this opens a pre-filled email to us, and we'll act on genuine reports.</li>
+    <li>Turning this off, from the same Settings toggle, immediately deletes every leaderboard entry you have — it isn't just "no new ones."</li>
+    <li>Deleting your account (see above) also permanently deletes all of your leaderboard entries.</li>
+  </ul>
 
   <h2>Microphone use</h2>
   <p>Speaking Practice and scenario role-play use your device's microphone to check your pronunciation, via on-device speech recognition. Your voice is:</p>
@@ -104,12 +126,17 @@
   </ul>
   <p>We don't use any other advertising or analytics service, and don't run analytics or crash-reporting of our own.</p>
 
+  <h2>Premium subscriptions</h2>
+  <p>Yallah Habibti offers an optional Premium subscription. Purchases are handled entirely by Apple's App Store or Google Play — we never receive or store your payment details (card numbers, billing address, etc.). We use <strong>RevenueCat</strong> to manage and verify your subscription status; RevenueCat receives a device-generated purchase/entitlement identifier and your purchase history from Apple/Google, but no payment information. See RevenueCat's own <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">Privacy Policy</a> for details.</p>
+  <p>Restoring a previous purchase (Settings → Restore purchases) works the same way, through your existing Apple ID or Google account — no account with us is required to buy or restore Premium.</p>
+
   <h2>What we don't do</h2>
   <ul>
-    <li>We don't require or collect an email address, name, or any account information</li>
-    <li>We don't run our own servers or databases that store your data</li>
+    <li>We don't require an account, email address, or name to use the app — those are only collected if you choose to turn on optional cloud sync (see above)</li>
+    <li>We don't operate our own servers — the only server-side storage involved is Google Firebase, and only for accounts that turn on optional sync</li>
+    <li>We never receive or store your payment details — purchases are processed by Apple, Google, and RevenueCat</li>
     <li>We don't sell your data</li>
-    <li>We don't share data with anyone beyond what's described above for advertising</li>
+    <li>We don't share data with anyone beyond what's described above for advertising, subscriptions, optional sync, and optional leaderboards</li>
   </ul>
 
   <h2>Children's privacy</h2>
@@ -119,7 +146,11 @@
   <ul>
     <li><strong>Ad consent:</strong> change your ad-personalization choice anytime via <strong>Settings → Ad privacy choices</strong> in the app (shown only where applicable).</li>
     <li><strong>Tracking permission (iOS):</strong> change your App Tracking Transparency choice anytime via your device's Settings → Privacy &amp; Security → Tracking.</li>
-    <li><strong>Deleting your data:</strong> since everything is stored only on your device, uninstalling the app (or clearing its data in your device settings) permanently deletes all app data.</li>
+    <li><strong>Deleting your data:</strong> uninstalling the app (or clearing its data in your device settings) permanently deletes everything stored on your device. If you've turned on sync, also use <strong>Settings → Delete account and cloud data</strong> first to remove your cloud-stored copy — it isn't affected by uninstalling the app.</li>
+    <li><strong>Turning off sync / deleting your account:</strong> from <strong>Settings → Delete account and cloud data</strong>, which deletes your account and everything stored under it in the cloud, including any leaderboard entries. Your on-device progress is untouched.</li>
+    <li><strong>Turning off leaderboards:</strong> from <strong>Settings → Show my scores on leaderboards</strong> — turning it off immediately deletes your existing leaderboard entries, not just future ones.</li>
+    <li><strong>Reporting a leaderboard name:</strong> tap the flag icon next to any name on a leaderboard to email us about it.</li>
+    <li><strong>Managing or cancelling Premium:</strong> subscriptions are managed through your Apple ID (Settings → [your name] → Subscriptions) or Google account (Play Store → Payments &amp; subscriptions) — not inside the app.</li>
   </ul>
 
   <h2>Changes to this policy</h2>
